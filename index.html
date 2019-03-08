@@ -77,8 +77,8 @@
   <script type="text/javascript" src="/static/lib/Layout.js"></script>
   <script type="text/javascript">
     var hamilton, layout, graph, fgraph, clip;
-    fgraph = {{ graph|safe }};
-    graph = fgraph['graph'] || {};
+    //fgraph = { graph|safe };
+    graph = /*fgraph['graph'] || */{};
     hamilton = new Hamilton(document.getElementById('hamilton-canvas'));
 
     if (graph.vertices && graph.edges) {
